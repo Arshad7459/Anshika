@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d27">
+  <title>Vikas's Birthday Surprise 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Birthday surprise home"><span class="brand-icon">✦</span> A LITTLE SURPRISE</a>
+    <span class="top-note">MADE WITH FRIENDSHIP 💜</span>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="eyebrow"><span class="live-dot"></span> TODAY IS ALL ABOUT YOU</div>
+      <p class="tiny-label">A SPECIAL DAY FOR</p>
+      <h1>Happy Birthday,<br><span id="recipient-name">Vikas</span><span class="sparkle">✦</span></h1>
+      <p class="hero-copy">Some people make ordinary days unforgettable.<br class="desktop-only"> Today, it's our turn to celebrate <strong>you</strong>.</p>
+      <div class="hero-actions">
+        <button class="button button-primary" id="open-surprise">Open your surprise <span aria-hidden="true">↗</span></button>
+        <a class="button button-ghost" href="#memories">Explore memories <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-foot"><span>✧</span> A tiny website for a very special friend <span>✧</span></div>
+      <div class="floating float-star">✦</div><div class="floating float-heart">♡</div><div class="floating float-spark">✧</div>
+    </section>
+
+    <section class="surprise section" id="surprise">
+      <div class="section-heading">
+        <p class="tiny-label">THE MOMENT YOU'VE BEEN WAITING FOR</p>
+        <h2>A little gift, <em>just for you.</em></h2>
+        <p>Go on, tap the box. Your surprise is waiting inside.</p>
+      </div>
+      <div class="gift-stage">
+        <div class="gift-glow"></div>
+        <button class="gift-button" id="gift-button" aria-label="Open the birthday gift">
+          <span class="gift-lid"><span class="lid-ribbon"></span><span class="bow bow-left"></span><span class="bow bow-right"></span></span>
+          <span class="gift-box"><span class="box-ribbon"></span></span>
+          <span class="gift-shadow"></span>
+        </button>
+        <div class="gift-hint" id="gift-hint">TAP TO OPEN ✨</div>
+      </div>
+      <div class="letter-card" id="letter-card" hidden>
+        <div class="letter-icon">💌</div>
+        <p class="tiny-label">A MESSAGE FROM <span id="sender-name-label">Arsad</span></p>
+        <h3>Hey, <span id="letter-recipient">Vikas</span>!</h3>
+        <p id="secret-message">Happy Birthday, Vikas! I hope your day is full of laughter, good surprises, and all the things that make you happy. Thanks for being the kind of friend who makes life better just by being in it. Keep smiling, keep shining, and never stop being you. Here's to more memories, more madness, and many more birthdays together!</p>
+        <div class="letter-signoff">Your friend, <span id="letter-sender">Arsad</span> 💜</div>
+        <button class="button button-primary small-button" id="confetti-button">Celebrate again 🎉</button>
+      </div>
+    </section>
+
+    <section class="memories section" id="memories">
+      <div class="section-heading">
+        <p class="tiny-label">THE GOOD TIMES</p>
+        <h2>Memories worth <em>keeping.</em></h2>
+        <p>Every great friendship is made of little moments.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <figure class="memory-card card-tall">
+          <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=85" alt="Friends celebrating together" loading="lazy">
+          <figcaption><span>01</span> The celebrations</figcaption>
+        </figure>
+        <figure class="memory-card card-offset">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="Friends spending time together" loading="lazy">
+          <figcaption><span>02</span> The good times</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85" alt="A group of friends sharing a moment" loading="lazy">
+          <figcaption><span>03</span> The little moments</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">✨ Tip: Replace these sample photos with your own pictures in <code>script.js</code>.</p>
+    </section>
+
+    <section class="final-note section">
+      <div class="final-star">✦</div>
+      <p class="tiny-label">ONE LAST THING</p>
+      <h2>Here's to another year<br>of <em>being legendary.</em></h2>
+      <p class="final-copy">May this year bring you big wins, peaceful days, unexpected adventures, and a thousand reasons to smile.</p>
+      <button class="button button-primary" id="final-celebrate">Make a wish ✨</button>
+      <p class="signature">Made with 💜 by <span id="footer-sender">Arsad</span></p>
+    </section>
+  </main>
+
+  <footer><span>© A little birthday magic</span><span>Built for <strong id="footer-recipient">Vikas</strong> · Keep shining ✦</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Make a wish! 🎂</div>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
